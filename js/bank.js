@@ -24,7 +24,7 @@ while(money<total) {
     document.getElementById("exBT1").innerHTML="Sau "+time+" tháng bạn sẽ nhận được số tiền "+numberWithCommas(total);
 }
 
-//hàm thêm phần thập phân vào sau phần ngàn trong MONEY cho dễ đọc, hàm này đi copy dạo chứ ko phải tự làm hehe
+//hàm thêm phần thập phân vào sau phần ngàn trong MONEY cho dễ đọc
 function numberWithCommas(x) {
     let parts = x.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");

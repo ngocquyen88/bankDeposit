@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Deposit</title>
+</head>
+<body>
+<h2 style="position: relative; left:120px">Tính lãi suất tiền gửi ngân hàng mỗi tháng</h2>
+<pre>Mời bạn vào gửi tiết kiệm nào ^^:
+
+    - Lãi suất hiện tại của ngân hàng:        <input type="number" id="interest_rate_ex"/> % một năm.
+
+    - Bạn cần gửi số tiền:                    <input type="number" id="amount_ex"/> VNĐ.
+
+    - Bạn muốn gửi tiết kiệm trong thời gian: <input type="number" id="time_ex"/> tháng.
+</pre>
+<p style="position: absolute; left:180px">
+    <button type="button" onclick="ex()">Tính lãi hàng tháng (+cộng dồn gốc)</button>
+</p>
+<br/><br/><br/>
+<label id="exBT"></label>
+<hr/>
+
+<h2 style="position: relative; left:120px">Công cụ tính lãi suất theo thời gian</h2>
+<pre>Mời bạn vào gửi tiết kiệm nào ^^:
+
+    - Lãi suất hiện tại của ngân hàng:           <input type="number" id="interest_rate_ex1"/> % một năm.
+
+    - Bạn cần gửi số tiền:                       <input type="number" id="amount_ex1"/> VNĐ.
+
+    - Số tiền (lãi+gốc) bạn mong muốn nhận được: <input type="number" id="total_ex1"/> VNĐ.
+</pre>
+<p style="position: absolute; left:180px">
+    <button type="button" onclick="ex1()">Tính thời gian</button>
+</p>
+<br/><br/><br/>
+<label id="exBT1"></label>
+<hr/>
+
+</body>
+<script src="js/bank.js"></script>
+</html>
